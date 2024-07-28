@@ -1,4 +1,4 @@
-// Arrays
+// Arrays + Array Methods
 
 // Se puede almacenar cualquier tipo,
 //pero siempre respetar el tipo para un arreglo
@@ -29,8 +29,31 @@ tecnologias.push("text.js") //No sirve porque muta en react
 const newTecnologias = ["primerito.ts", ...tecnologias, "nuevo.me"]
 
 
-console.table(newTecnologias)
 
+// -- Eliminar un elemento del arreglo --
+
+//Dos formas clave con filter y map
+
+//filter - filtra por un solo elemento
+const tecnologias2 = newTecnologias.filter(function(tech){
+    if(tech !== "HTML"){
+        return tech
+    }
+})
+
+console.table(tecnologias2)
+
+//map - itera sobre todos los elementos de la coleccion o array
+//necesita else que es la condicion para el resto, si se requiere
+const tecnologias3 = newTecnologias.map(function(tech){
+    if(tech !== "Next.js"){
+        return "testeando.js"
+    }else{
+        return tech
+    }
+})
+
+console.table(tecnologias3)
 
 
 
