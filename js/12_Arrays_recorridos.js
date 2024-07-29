@@ -11,19 +11,29 @@ for(let i = 0; i < tecnologias.length; i++){
 }
 
 
-// Foreach
+// // ForEach
 tecnologias.forEach(function(valor, indice, array){
     console.log(valor)
 })
 
-// map - este genera un arreglo nuevo en base a la condicion que le pasamos
+
+// ForEach con arrow method
+const funcionRecorrer = (list) => {
+    list.forEach((valor, indice, array) => {
+        console.log(valor, indice)
+    })
+}
+
+funcionRecorrer(tecnologias)
+
+// // map - este genera un arreglo nuevo en base a la condicion que le pasamos
 const arrayMap = tecnologias.map(function(tech){
     return tech
 })
 
 
 
-// for ... of | el que uso en java
+// // for ... of | el que uso en java
 for (let tech of tecnologias){
     console.log(tech)
 }
