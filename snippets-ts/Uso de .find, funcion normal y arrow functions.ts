@@ -41,3 +41,35 @@ addItem2(motito1)
 addItem(encontrando)
 
 console.log(listaCuatris)
+
+//============================================
+//              DEVUELVE:
+//============================================
+
+/*
+    [{
+    "id": 99,
+    "marca": "Renault"
+    }, {
+    "id": 96,
+    "marca": "ferrari"
+    }, {
+    "id": 4,
+    "marca": "Chevrolet"
+    }, {
+    "id": 5,
+    "marca": "Audi"
+    }, {
+    "id": 6,
+    "marca": "Vowlswagen"
+    }, {
+    "id": 99,
+    "marca": "Renault"
+    }, {
+    "id": 3,
+    "marca": "Toyota"
+    }, {
+    "id": 2,
+    "marca": "BMW"
+    }] 
+*/
